@@ -1,0 +1,2 @@
+You filtered incoming params.
+You discarded all other params that are not in allowed list.
