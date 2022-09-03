@@ -1,7 +1,7 @@
 defmodule Secure.User do
   @regular_user_changeset [:name, :email]
   @admin_changeset [:role]
-  defstruct [:name, :email, :role]
+  defstruct [:name, :email, :role, :id, :notes]
 
   def create(params) do
     whitelisted_params = Map.take(params, @regular_user_changeset)
